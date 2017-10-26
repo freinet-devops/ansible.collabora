@@ -1,0 +1,9 @@
+# joe-speedboat/test/playbook.yml
+---
+- name: Install and configure Collabora CODE
+  hosts: vm04
+  roles:
+    - role: joe-speedboat.collabora
+      collabora_admin_user: admin
+      collabora_admin_password: 'nevermind!'
+...

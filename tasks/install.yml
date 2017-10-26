@@ -1,0 +1,25 @@
+# joe-speedboat.collabora/tasks/install.yml
+---
+- name: Install collabora CODE repo
+  yum_repository:
+    name: collabora-CODE
+    description: collabora CODE repo
+    baseurl: https://www.collaboraoffice.com/repos/CollaboraOnline/CODE-centos7
+    gpgkey: https://www.collaboraoffice.com/repos/CollaboraOnline/CODE-centos7/repodata/repomd.xml.key 
+
+#- name: Install collabora CODE repo key
+#  shell: rpm --import https://www.collaboraoffice.com/repos/CollaboraOnline/CODE-centos7/repodata/repomd.xml.key
+#  changed_when: false
+
+- name: Install collabora CODE packages
+  yum:
+    name: '{{ item.package }}'
+    state: present
+  with_items: "{{ collabora_packages_EL }}"
+
+- name: enable loolwsd service
+  service:
+    name: loolwsd
+    state: started
+    enabled: yes
+...

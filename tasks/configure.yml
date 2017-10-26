@@ -1,0 +1,36 @@
+# joe-speedboat.collabora/tasks/configure.yml
+---
+- name: Register md5sum of /etc/loolwsd/loolwsd.xml
+  shell: md5sum /etc/loolwsd/loolwsd.xml
+  register: loolwsd_conf_md5sum_before
+  changed_when: false
+
+- name: Configure loolwsd admin user
+  replace: 
+    dest: /etc/loolwsd/loolwsd.xml
+    regexp: '<username desc=.*' 
+    replace: '<username desc="The username of the admin console. Must be set.">{{ collabora_admin_user }}</username>'
+
+- name: Configure loolwsd admin password
+  replace: 
+    dest: /etc/loolwsd/loolwsd.xml
+    regexp: '<password desc=.*' 
+    replace: '<password desc="The password of the admin console. Must be set.">{{ collabora_admin_password }}</password>'
+
+- name: Disable loolwsd SSL, we use nginx reverse proxy`
+  replace: 
+    dest: /etc/loolwsd/loolwsd.xml
+    regexp: '<enable type="bool" default="true">true</enable>' 
+    replace: '<enable type="bool" default="true">false</enable>'
+
+- name: Register md5sum of /etc/loolwsd/loolwsd.xml
+  shell: md5sum /etc/loolwsd/loolwsd.xml
+  register: loolwsd_conf_md5sum_after
+  changed_when: false
+
+- name: Restart loolwsd server if needed
+  service:
+    name: loolwsd
+    state: restarted
+  when: loolwsd_conf_md5sum_before.stdout != loolwsd_conf_md5sum_after.stdout
+...

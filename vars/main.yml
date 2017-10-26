@@ -1,0 +1,11 @@
+# vars/main.yml from joe-speedboat.collabora
+---
+collabora_packages_EL:
+  - {package: "loolwsd"}
+  - {package: "CODE-brand"}
+
+nginx_packages_EL:
+  - {package: "nginx"}
+  - {package: "openssl"}
+
+...
