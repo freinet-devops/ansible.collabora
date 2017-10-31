@@ -17,11 +17,17 @@
     regexp: '<password desc=.*' 
     replace: '<password desc="The password of the admin console. Must be set.">{{ collabora_admin_password }}</password>'
 
-- name: Disable loolwsd SSL, we use nginx reverse proxy`
-  replace: 
-    dest: /etc/loolwsd/loolwsd.xml
-    regexp: '<enable type="bool" default="true">true</enable>' 
-    replace: '<enable type="bool" default="true">false</enable>'
+#- name: Disable loolwsd SSL, we use nginx reverse proxy
+#  replace: 
+#    dest: /etc/loolwsd/loolwsd.xml
+#    regexp: '<enable type="bool" default="true"></enable>' 
+#    replace: '<enable type="bool" default="true">false</enable>'
+#- name: Disable loolwsd SSL, we use nginx reverse proxy cleanup
+#  replace: 
+#    dest: /etc/loolwsd/loolwsd.xml
+#    regexp: '<enable type="bool" default="true">true</enable>' 
+#    replace: '<enable type="bool" default="true">false</enable>'
+
 
 - name: Register md5sum of /etc/loolwsd/loolwsd.xml
   shell: md5sum /etc/loolwsd/loolwsd.xml
