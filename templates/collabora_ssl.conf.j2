@@ -1,6 +1,6 @@
 # nginx reverse proxy with ssl offloading for collabora CODE running on localhost
 server {
-    listen       8443 ssl;
+    listen       {{ collabora_nginx_ssl_cert_port }} ssl;
     server_name  {{ collabora_nginx_ssl_cert_host }};
 
 	ssl_certificate     {{collabora_nginx_ssl_cert_crt}};

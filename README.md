@@ -16,6 +16,7 @@ collabora_admin_password: 'changeme1'
 # install ngingx reverse proxy on top of collabora
 collabora_nginx_ssl_cert_days: 3650
 collabora_nginx_ssl_cert_host: "{{ansible_fqdn}}"
+collabora_nginx_ssl_cert_port: 8443
 collabora_nginx_ssl_cert_dir: /etc/nginx
 collabora_nginx_ssl_cert_key: "{{collabora_nginx_ssl_cert_dir}}/collabora_key.pem"
 collabora_nginx_ssl_cert_crt: "{{collabora_nginx_ssl_cert_dir}}/collabora_crt.pem"
