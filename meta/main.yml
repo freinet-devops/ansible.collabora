@@ -3,10 +3,13 @@ galaxy_info:
   author: Chris Ruettimann
   company: Bitbull Consulting
   description: installation and configuration of collabora CODE with nginx reverse proxy
-  min_ansible_version: 1.7
-  license: GPL
+  min_ansible_version: 2.4
+  license: GPLv3
   platforms:
   - name: EL
     versions:
     - 7
+  galaxy_tags:
+  - office
+  - nextcloud
 dependencies: []
