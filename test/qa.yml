@@ -1,0 +1,10 @@
+# joe-speedboat/test/playbook.yml
+---
+- name: Install and configure Collabora CODE
+  hosts: vm06
+  roles:
+    - role: joe-speedboat.collabora
+      collabora_admin_user: admin
+      collabora_admin_password: 'secret'
+      collabora_nginx_ssl_cert_host: '{{ ansible_fqdn }}'
+...
