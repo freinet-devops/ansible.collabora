@@ -43,11 +43,12 @@
   firewalld:
     port: 8443/tcp
     permanent: true
+    imediate: true
     state: enabled
 
 - name: enable firewalld
   service:
     name: firewalld
     enabled: yes
-    state: restarted
+    state: started
 
