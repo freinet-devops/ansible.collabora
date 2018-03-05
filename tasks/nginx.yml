@@ -43,7 +43,7 @@
   firewalld:
     port: 8443/tcp
     permanent: true
-    imediate: true
+    immediate: true
     state: enabled
 
 - name: enable firewalld
