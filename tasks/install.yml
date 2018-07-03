@@ -1,4 +1,4 @@
-# joe-speedboat.collabora/tasks/install.yml
+# joe_speedboat.collabora/tasks/install.yml
 ---
 - name: Install collabora CODE repo
   yum_repository:

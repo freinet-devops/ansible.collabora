@@ -1,5 +1,5 @@
 ---
-# joe-speedboat.collabora role defaults/main.yml
+# joe_speedboat.collabora role defaults/main.yml
 collabora_admin_user: admin
 collabora_admin_password: 'nevermind!'
 

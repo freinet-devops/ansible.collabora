@@ -1,4 +1,4 @@
-# vars/main.yml from joe-speedboat.collabora
+# vars/main.yml from joe_speedboat.collabora
 ---
 collabora_packages_EL:
   - {package: "loolwsd"}
