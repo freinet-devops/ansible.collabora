@@ -8,7 +8,7 @@ Nginx is doing reverse proxy and ssl offloading with self signed cert by default
 ## Role Variables
 
 The following variables can be overridden:
-# joe_speedboat.collabora role defaults/main.yml
+# joe_speedboat.ansible_collabora role defaults/main.yml
 collabora_admin_user: admin    
 collabora_admin_password: 'changeme1'    
 
