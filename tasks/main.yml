@@ -1,4 +1,4 @@
-# joe_speedboat.collabora/tasks/main.yml
+# joe_speedboat.ansible_collabora/tasks/main.yml
 ---
 - include_tasks: install.yml
   tags: [install]
