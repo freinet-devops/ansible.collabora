@@ -1,4 +1,4 @@
-# joe_speedboat/test/playbook.yml
+# joe-speedboat/test/playbook.yml
 ---
 - name: Install and configure Collabora CODE
   hosts: all

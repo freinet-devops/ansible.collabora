@@ -1,5 +1,5 @@
 ---
-# handlers file for joe_speedboat.ansible_collabora
+# handlers file for joe-speedboat.ansible_collabora
 
 - name: restart nginx
   systemd:

@@ -1,4 +1,4 @@
-# joe_speedboat.ansible_collabora/tasks/nginx.yml
+# joe-speedboat.ansible_collabora/tasks/nginx.yml
 ---
 - name: Install necessary packages for nginx
   yum:
