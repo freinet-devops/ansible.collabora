@@ -3,6 +3,8 @@
 collabora_admin_user: admin
 collabora_admin_password: 'nevermind!'
 
+# somethimes collabora CODE packages are not signed
+collabora_yum_gpgcheck: yes
 
 
 # install ngingx reverse proxy on top of collabora

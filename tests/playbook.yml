@@ -7,4 +7,5 @@
       collabora_admin_user: admin
       collabora_admin_password: 'nevermind!'
       collabora_nginx_ssl_cert_host: co.office.bitbull.ch
+      collabora_yum_gpgcheck: no
 ...

@@ -6,6 +6,7 @@
     description: collabora CODE repo
     baseurl: https://www.collaboraoffice.com/repos/CollaboraOnline/CODE-centos7
     gpgkey: https://www.collaboraoffice.com/repos/CollaboraOnline/CODE-centos7/repodata/repomd.xml.key 
+    gpgcheck: "{{ collabora_yum_gpgcheck }}" 
 
 #- name: Install collabora CODE repo key
 #  shell: rpm --import https://www.collaboraoffice.com/repos/CollaboraOnline/CODE-centos7/repodata/repomd.xml.key
