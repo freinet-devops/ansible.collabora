@@ -1,8 +1,9 @@
 ---
 galaxy_info:
   author: Chris Ruettimann
-  company: Bitbull Consulting
+  company: uniQconsulting ag
   description: installation and configuration of collabora CODE with nginx reverse proxy
+  role_name: collabora
   min_ansible_version: 2.4
   license: GPLv3
   platforms:
