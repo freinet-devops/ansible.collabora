@@ -1,4 +1,4 @@
-# joe-speedboat.ansible_collabora/tasks/main.yml
+# uniQconsulting.collabora/tasks/main.yml
 ---
 - include_tasks: install.yml
   tags: [install]

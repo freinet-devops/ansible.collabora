@@ -1,4 +1,4 @@
-# vars/main.yml from joe-speedboat.ansible_collabora
+# vars/main.yml from uniQconsulting.collabora
 ---
 collabora_packages_EL:
   - {package: "loolwsd"}

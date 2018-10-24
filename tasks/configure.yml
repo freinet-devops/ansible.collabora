@@ -1,4 +1,4 @@
-# joe-speedboat.ansible_collabora/tasks/configure.yml
+# uniQconsulting.collabora/tasks/configure.yml
 ---
 - name: Register md5sum of /etc/loolwsd/loolwsd.xml
   shell: md5sum /etc/loolwsd/loolwsd.xml

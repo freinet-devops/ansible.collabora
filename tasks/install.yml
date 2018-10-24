@@ -1,4 +1,4 @@
-# joe-speedboat.ansible_collabora/tasks/install.yml
+# uniQconsulting.collabora/tasks/install.yml
 ---
 - name: Install collabora CODE repo
   yum_repository:
