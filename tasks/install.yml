@@ -11,6 +11,11 @@
 #- name: Install collabora CODE repo key
 #  shell: rpm --import https://www.collaboraoffice.com/repos/CollaboraOnline/CODE-centos7/repodata/repomd.xml.key
 #  changed_when: false
+- name: Install nginx packages
+  yum:
+    name: '{{ item.package }}'
+    state: present
+  with_items: "{{ nginx_packages_EL }}"
 
 - name: Install collabora CODE packages
   yum:
