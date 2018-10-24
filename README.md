@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/uniQconsulting-ag/ansible.collabora.svg?branch=master)](https://travis-ci.org/uniQconsulting-ag/ansible.collabora)
+
 # Collabora Ansible Role    
 This is installing collabora CODE on CentOS7 server.    
 Nginx is doing reverse proxy and ssl offloading with self signed cert by default.    
