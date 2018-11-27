@@ -18,11 +18,11 @@ Role Variables
 --------------
 The following variables can be overridden:
 
-# uniQconsulting.collabora role defaults/main.yml
+##### uniQconsulting.collabora role defaults/main.yml
 * collabora_admin_user: admin    
 * collabora_admin_password: 'changeme1'    
 
-# install ngingx reverse proxy on top of collabora
+##### install ngingx reverse proxy on top of collabora
 * collabora_nginx_ssl_cert_days: 3650    
 * collabora_nginx_ssl_cert_host: "{{ansible_fqdn}}"    
 * collabora_nginx_ssl_cert_port: 8443    
