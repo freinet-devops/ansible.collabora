@@ -1,5 +1,7 @@
 # uniQconsulting.collabora/tasks/main.yml
 ---
+- import_tasks: include-vars.yml
+
 - include_tasks: install.yml
   tags: [install]
 
