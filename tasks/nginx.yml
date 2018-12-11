@@ -18,6 +18,8 @@
   - name: create/update self signed cert
     shell: /usr/local/sbin/create-collabora-cert.sh
     changed_when: False
+    args:
+      warn: false
 
 - name: create/update nginx ssl config for collabora
   template:

@@ -4,6 +4,8 @@
   shell: md5sum /etc/loolwsd/loolwsd.xml
   register: loolwsd_conf_md5sum_before
   changed_when: false
+  args:
+    warn: false
 
 - name: Configure loolwsd admin user
   replace: 
@@ -33,6 +35,8 @@
   shell: md5sum /etc/loolwsd/loolwsd.xml
   register: loolwsd_conf_md5sum_after
   changed_when: false
+  args:
+    warn: false
 
 - name: Restart loolwsd server if needed
   service:
