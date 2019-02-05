@@ -1,11 +1,9 @@
 # uniQconsulting.collabora/tasks/configure.yml
 ---
 - name: Register md5sum of /etc/loolwsd/loolwsd.xml
-  shell: md5sum /etc/loolwsd/loolwsd.xml
-  register: loolwsd_conf_md5sum_before
+  stat: /etc/loolwsd/loolwsd.xml
+  register: loolwsd_conf_before
   changed_when: false
-  args:
-    warn: false
 
 - name: Configure loolwsd admin user
   replace: 
@@ -32,15 +30,13 @@
 
 
 - name: Register md5sum of /etc/loolwsd/loolwsd.xml
-  shell: md5sum /etc/loolwsd/loolwsd.xml
-  register: loolwsd_conf_md5sum_after
+  stat: /etc/loolwsd/loolwsd.xml
+  register: loolwsd_conf_after
   changed_when: false
-  args:
-    warn: false
 
 - name: Restart loolwsd server if needed
   service:
     name: loolwsd
     state: restarted
-  when: loolwsd_conf_md5sum_before.stdout != loolwsd_conf_md5sum_after.stdout
+  when: loolwsd_conf_before.stat.md5 != loolwsd_conf_after.stat.md5
 ...
