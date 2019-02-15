@@ -1,6 +1,7 @@
 # vars/main.yml from uniQconsulting.collabora
 ---
 collabora_packages_EL:
+  - {package: "python-lxml"}
   - {package: "loolwsd"}
   - {package: "CODE-brand"}
 

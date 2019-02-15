@@ -8,6 +8,8 @@
 - include_tasks: configure.yml
   tags: [configure]
 
-- include_tasks: nginx.yml
+- name: setup nginx
+  include_tasks: nginx.yml
   tags: [configure]
+  when: collabora_nginx_setup
 ...

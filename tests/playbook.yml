@@ -1,11 +1,8 @@
 # uniQconsulting.collabora/test/playbook.yml
 ---
 - name: Install and configure Collabora CODE
-  hosts: vm04
+  hosts: vm21
   roles:
     - role: uniQconsulting.collabora
-      collabora_admin_user: admin
-      collabora_admin_password: 'nevermind!'
-      collabora_nginx_ssl_cert_host: co.office.bitbull.ch
-      collabora_yum_gpgcheck: yes
+      collabora_nginx_ssl_cert_host: co.domain.com
 ...
