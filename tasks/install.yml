@@ -1,4 +1,4 @@
-# uniQconsulting.collabora/tasks/install.yml
+# uniqconsulting.collabora/tasks/install.yml
 ---
 - name: Install collabora CODE repo
   yum_repository:

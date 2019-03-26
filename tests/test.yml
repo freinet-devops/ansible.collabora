@@ -1,4 +1,4 @@
-# uniQconsulting.collabora/test/playbook.yml
+# uniqconsulting.collabora/test/playbook.yml
 ---
 - name: Install and configure Collabora CODE
   hosts: all

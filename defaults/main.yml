@@ -1,5 +1,5 @@
 ---
-# uniQconsulting.collabora role defaults/main.yml
+# uniqconsulting.collabora role defaults/main.yml
 # NOTE: this defaults are set for setting up collabora on same host as nextcloud
 
 # admin interface settings

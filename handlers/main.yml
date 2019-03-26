@@ -1,5 +1,5 @@
 ---
-# handlers file for uniQconsulting.collabora
+# handlers file for uniqconsulting.collabora
 
 - name: restart nginx
   systemd:

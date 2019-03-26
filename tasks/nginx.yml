@@ -1,4 +1,4 @@
-# uniQconsulting.collabora/tasks/nginx.yml
+# uniqconsulting.collabora/tasks/nginx.yml
 ---
 - name: Install necessary packages for nginx
   yum:

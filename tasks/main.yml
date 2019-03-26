@@ -1,4 +1,4 @@
-# uniQconsulting.collabora/tasks/main.yml
+# uniqconsulting.collabora/tasks/main.yml
 ---
 - import_tasks: include-vars.yml
 

@@ -1,4 +1,4 @@
-# vars/main.yml from uniQconsulting.collabora
+# vars/main.yml from uniqconsulting.collabora
 ---
 collabora_packages_EL:
   - {package: "python-lxml"}

@@ -1,4 +1,4 @@
-# uniQconsulting.collabora/tasks/configure.yml
+# uniqconsulting.collabora/tasks/configure.yml
 ---
 
 - name: enable collabora admin account
