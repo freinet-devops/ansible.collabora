@@ -27,7 +27,7 @@
     dest: /etc/nginx/conf.d/collabora_ssl.conf
     owner: root
     group: nginx
-    mode: 0750
+    mode: 0640
   notify: restart nginx
 
 - name: install firewalld
