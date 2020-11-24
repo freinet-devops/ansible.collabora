@@ -1,12 +1,21 @@
 # vars/main.yml from uniqconsulting.collabora
 ---
-collabora_packages_EL:
-  - {package: "python-lxml"}
-  - {package: "loolwsd"}
-  - {package: "CODE-brand"}
+collabora_packages_centos7:
+- python-lxml
+- loolwsd
+- CODE-brand
 
-nginx_packages_EL:
-  - {package: "nginx"}
-  - {package: "openssl"}
+nginx_packages_centos7:
+- nginx
+- openssl
+
+collabora_packages_centos8:
+- python3-lxml
+- loolwsd
+- CODE-brand
+
+nginx_packages_centos8:
+- nginx
+- openssl
 
 ...
