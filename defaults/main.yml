@@ -13,7 +13,6 @@ collabora_terminate_ssl: false
 # somethimes collabora CODE packages are not signed
 collabora_yum_gpgcheck: yes
 
-
 # install ngingx reverse proxy on top of collabora
 collabora_nginx_setup: false
 collabora_nginx_ssl_cert_days: 3650
